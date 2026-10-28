@@ -1,0 +1,7 @@
+{
+  "id": "wechat-miniprogram",
+  "name": "微信小程序",
+  "description": "小程序：分包、审核合规、开发者工具桥接。继承通用基座。",
+  "extends": "generic",
+  "packageCmd": "echo 'run miniprogram-ci upload with your appid'"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "python-data",
+  "name": "数据工程 / Python 脚本",
+  "description": "数据处理、ETL、分析脚本：venv、pandas/duckdb、可复现运行。继承通用基座。",
+  "extends": "generic",
+  "buildCmd": "python3 -m compileall -q .",
+  "testCmd": "python3 -m pytest -q"
+}

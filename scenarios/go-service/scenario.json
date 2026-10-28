@@ -1,0 +1,9 @@
+{
+  "id": "go-service",
+  "name": "后端服务 (Go)",
+  "description": "Go HTTP/gRPC 服务：模块化单仓、集成测试、交叉编译。继承通用基座。",
+  "extends": "generic",
+  "buildCmd": "go build ./... && go vet ./...",
+  "testCmd": "go test ./...",
+  "packageCmd": "go build -o bin/service ./cmd/..."
+}

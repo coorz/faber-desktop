@@ -1,0 +1,7 @@
+{
+  "id": "react-native",
+  "name": "App (React Native)",
+  "description": "RN 跨平台应用：metro、双端模拟器、原生模块。继承通用基座。",
+  "extends": "generic",
+  "testCmd": "npm test --if-present"
+}

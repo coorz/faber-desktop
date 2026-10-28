@@ -1,0 +1,100 @@
+{
+  "name": "faber-desktop",
+  "productName": "Faber",
+  "version": "1.0.0",
+  "description": "Faber - scenario-driven AI development workbench",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --mac",
+    "dist:win": "electron-builder --win",
+    "dist:linux": "electron-builder --linux",
+    "dist:all": "electron-builder --mac --win --linux"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "chat.echo-ai.faber",
+    "productName": "Faber",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "build/icon.icns"
+    ],
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "build/icon.icns",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ],
+      "hardenedRuntime": true,
+      "notarize": false,
+      "entitlements": "build/entitlements.mac.plist"
+    },
+    "dmg": {
+      "title": "Faber"
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "Faber-Setup-${version}.${ext}"
+    },
+    "linux": {
+      "icon": "build/icon.png",
+      "category": "Development",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "https://cdn.echo-ai.chat/download/"
+      }
+    ],
+    "extraResources": [
+      {
+        "from": "../scenarios",
+        "to": "scenarios"
+      }
+    ]
+  },
+  "author": {
+    "name": "ChainJoy Limited",
+    "email": "faber@chainjoy.online"
+  },
+  "homepage": "https://faber.echo-ai.chat",
+  "dependencies": {
+    "electron-updater": "^6.8.11"
+  }
+}

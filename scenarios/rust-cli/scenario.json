@@ -1,0 +1,9 @@
+{
+  "id": "rust-cli",
+  "name": "工具 (Rust)",
+  "description": "Rust CLI/库：cargo、clippy 严格门、crates 发布。继承通用基座。",
+  "extends": "generic",
+  "buildCmd": "cargo build --quiet",
+  "testCmd": "cargo test --quiet",
+  "packageCmd": "cargo package --allow-dirty -q"
+}

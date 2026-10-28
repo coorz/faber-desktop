@@ -1,0 +1,5 @@
+node_modules/
+release/
+*.p12
+*.p8
+*.pem

@@ -1,0 +1,7 @@
+{
+  "id": "android-app",
+  "name": "Android App (Kotlin/Gradle)",
+  "description": "Kotlin/Java Android 应用：Gradle 构建、模拟器、Play 上架。继承通用基座。",
+  "extends": "generic",
+  "buildCmd": "./gradlew assembleDebug --console=plain -q || gradle assembleDebug"
+}

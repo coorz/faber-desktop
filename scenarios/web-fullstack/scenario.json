@@ -1,0 +1,11 @@
+{
+  "id": "web-fullstack",
+  "name": "Web 全栈（前后端）",
+  "description": "React/Next 前端 + Node API + 数据库，浏览器自动化验证。继承通用基座。",
+  "extends": "generic",
+  "detects": ["package.json", "next.config.js"],
+  "buildCmd": "npm run build --if-present",
+  "testCmd": "npm test --if-present",
+  "packageCmd": "",
+  "releaseCmd": ""
+}

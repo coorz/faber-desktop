@@ -1,0 +1,7 @@
+{
+  "id": "telegram-bot",
+  "name": "Telegram Bot",
+  "description": "Bot 服务：webhook/long-polling、支付与速率。继承通用基座。",
+  "extends": "generic",
+  "testCmd": "python3 -m pytest -q || npm test --if-present"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "electron-desktop",
+  "name": "桌面应用 (Electron/Tauri)",
+  "description": "桌面应用：主/渲染进程、安装器、自动更新。继承通用基座。",
+  "extends": "generic",
+  "buildCmd": "npm run build --if-present"
+}

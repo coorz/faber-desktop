@@ -1,0 +1,11 @@
+{
+  "id": "browser-extension",
+  "name": "浏览器插件（Chrome/Edge）",
+  "description": "Manifest V3 插件：background/content script/ popup，商店合规。继承通用基座。",
+  "extends": "generic",
+  "detects": ["manifest.json"],
+  "buildCmd": "",
+  "testCmd": "",
+  "packageCmd": "zip -r ../extension.zip . -x 'node_modules/*' '.git/*'",
+  "releaseCmd": ""
+}

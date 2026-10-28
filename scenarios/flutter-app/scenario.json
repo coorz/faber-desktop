@@ -1,0 +1,11 @@
+{
+  "id": "flutter-app",
+  "name": "App 开发（Flutter）",
+  "description": "跨平台 App：widget/状态/双端差异/商店提包。继承通用基座。",
+  "extends": "generic",
+  "detects": ["pubspec.yaml"],
+  "buildCmd": "flutter analyze",
+  "testCmd": "flutter test",
+  "packageCmd": "",
+  "releaseCmd": ""
+}

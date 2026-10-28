@@ -1,0 +1,11 @@
+{
+  "id": "unity",
+  "name": "Unity 游戏开发",
+  "description": "场景/预制体/资产引用/PlayMode 测试/多平台构建。继承通用基座。",
+  "extends": "generic",
+  "detects": ["ProjectSettings/ProjectVersion.txt"],
+  "buildCmd": "",
+  "testCmd": "",
+  "packageCmd": "",
+  "releaseCmd": ""
+}

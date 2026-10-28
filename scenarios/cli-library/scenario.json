@@ -1,0 +1,11 @@
+{
+  "id": "cli-library",
+  "name": "CLI / 开源库",
+  "description": "npm 包与命令行工具：API 面、semver、跨平台发布。继承通用基座。",
+  "extends": "generic",
+  "detects": ["package.json"],
+  "buildCmd": "npm run build --if-present",
+  "testCmd": "npm test --if-present",
+  "packageCmd": "npm pack",
+  "releaseCmd": ""
+}

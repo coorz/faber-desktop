@@ -1,0 +1,7 @@
+{
+  "id": "ai-agent",
+  "name": "AI 应用 / Agent 开发",
+  "description": "LLM 应用：prompt 版本化、eval 基线、成本预算。继承通用基座。",
+  "extends": "generic",
+  "testCmd": "npm test --if-present || python3 -m pytest -q"
+}

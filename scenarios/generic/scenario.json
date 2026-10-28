@@ -1,0 +1,10 @@
+{
+  "id": "generic",
+  "name": "通用（基座）",
+  "description": "任意代码仓/新项目的底座：git、shell、测试循环。所有场景包隐式继承它。",
+  "detects": [],
+  "buildCmd": "",
+  "testCmd": "",
+  "packageCmd": "",
+  "releaseCmd": ""
+}

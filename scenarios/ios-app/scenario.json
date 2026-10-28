@@ -1,0 +1,7 @@
+{
+  "id": "ios-app",
+  "name": "iOS App (Swift)",
+  "description": "SwiftUI/UIKit 应用：Xcode 工程、真机与 TestFlight。继承通用基座。",
+  "extends": "generic",
+  "buildCmd": "xcodebuild -list"
+}
